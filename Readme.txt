@@ -10,3 +10,6 @@ Please firstly install the IMP runtime(just runtime feature is needed) from
 http://www.eclipse.org/imp/
 
 It will be considered to provide an imp runtime binding in the project for convenience? 
+
+Tested Environment:
+Eclipse SDK 3.5M5, IMP 0.1.90
