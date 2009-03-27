@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.imp.runtime.languageDescription">
+      <language
+            extensions="xq,com.google.code.exquery.ide"
+            description="XQuery Language"
+            natureID="com.google.code.exquery.nature"
+            language="XQuery">
+      </language>
+   </extension>
+   <extension
+         id="com.google.code.exquery.ide.parserWrapper"
+         name="XQuery Parser Wrapper"
+         point="org.eclipse.imp.runtime.parser">
+      <parserWrapper
+            class="com.google.code.exquery.ide.imp.parser.XQueryParseController"
+            language="XQuery">
+      </parserWrapper>
+   </extension>
+   <extension
+         id="com.google.code.exquery.ide.parserWrapper"
+         name="XQuery Parser Wrapper"
+         point="org.eclipse.imp.runtime.parser">
+      <parserWrapper
+            class="com.google.code.exquery.ide.XQueryParseController"
+            language="XQuery">
+      </parserWrapper>
+   </extension>
+   <extension
+         point="org.eclipse.imp.runtime.tokenColorer">
+      <tokenColorer
+            class="com.google.code.exquery.ide.tokenColorer.XQueryTokenColorer"
+            language="XQuery">
+      </tokenColorer>
+   </extension>
+
+</plugin>

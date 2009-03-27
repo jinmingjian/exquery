@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: IDE Runtime Tooling
+Bundle-SymbolicName: com.google.code.exquery.ide;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: Jin Mingjian
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.imp.runtime,
+ org.eclipse.ui,
+ lpg.runtime,
+ org.eclipse.jface.text,
+ com.google.code.exquery.parser;bundle-version="1.0.0"
+Bundle-Activator: com.google.code.exquery.ide.XQueryPlugin
+Eclipse-LazyStart: true
